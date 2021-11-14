@@ -1,0 +1,7 @@
+venv
+__pycache__
+.ipynb_checkpoints
+api/.ipynb_checkpoints
+api/__pycache__
+node_modules
+**/*.txt
