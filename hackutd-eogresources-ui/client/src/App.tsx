@@ -48,7 +48,7 @@ function App() {
       } else if (data.type === "OPTIMATION_RESULT") {
         const response: ServerResponse = JSON.parse(message.data);
         setResult(response);
-        setResultList(oldList => [...oldList, response]);
+        setResultList(oldList => [...oldList, response].slice(-10));
         setCurrPitVol(response.currentPitVolume === undefined ? 0 : response.currentPitVolume);
       }
     });
